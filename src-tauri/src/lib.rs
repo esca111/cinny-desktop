@@ -20,6 +20,7 @@ pub fn run() {
     builder
         .plugin(tauri_plugin_localhost::Builder::new(port).build())
         .plugin(tauri_plugin_window_state::Builder::default().build())
+        .plugin(tauri_plugin_notification::init())
         .setup(move |app| {
             let url = format!("http://localhost:{}", port).parse().unwrap();
             let window_url = WebviewUrl::External(url);
