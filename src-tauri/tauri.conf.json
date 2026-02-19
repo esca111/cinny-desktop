@@ -60,6 +60,18 @@
   "app": {
     "security": {
       "csp": "script-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'; connect-src: http://ipc.localhost;"
-    }
+    },
+      "windows":
+      [{
+        "label": "main",
+        "title": "Cinny",
+        "width": 1280,
+        "height": 905,
+        "center": true,
+        "resizable": true,
+        "fullscreen": false,
+        "dragDropEnabled": false,
+        "url": "tauri://localhost"
+      }]
   }
 }
