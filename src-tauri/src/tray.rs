@@ -9,8 +9,8 @@ use tauri::{
 pub fn generate_tray<R: Runtime>(app: &App) -> Result<TrayIconBuilder<R>, Error>{
 
     //menu stuff
-    let quit_item = MenuItem::with_id(app, "quit", "Quit", true, None::<&str>)?;
     let open_item = MenuItem::with_id(app, "open", "Show Cinny", true, None::<&str>)?;
+    let quit_item = MenuItem::with_id(app, "quit", "Quit", true, None::<&str>)?;
 
     let menu = Menu::with_items(app, &[&quit_item, &open_item])?;
     let window = app.get_webview_window("main").unwrap();
