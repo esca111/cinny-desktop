@@ -59,7 +59,7 @@
   },
   "app": {
     "security": {
-      "csp": "script-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'; connect-src: http://ipc.localhost;"
+      "csp": "script-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self';"
     }
   }
 }
